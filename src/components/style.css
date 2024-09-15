@@ -1,0 +1,69 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.App{
+    box-sizing: border-box;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.712);
+}
+.container{
+    max-width: 600px;
+    margin: 5px;
+    width: calc(100% - 10px);
+    padding: 30px;
+    box-sizing: border-box;
+    border: 1px solid #ced4da;
+    background: #fff;
+    box-shadow: 0 0 6px rgba(0,0,0,0.25);
+}
+.test{
+    user-select: none;
+}
+
+input.input-field{
+    opacity: 0;
+    z-index: -999;
+    position: absolute;
+}
+
+span{
+    font-size: 20px;
+    user-select: none;
+    cursor: pointer;
+}
+span.active{
+    border-bottom: 3px solid blue;
+}
+span.correct{
+    background-color: green;
+}
+span.wrong{
+    color: red;
+    background-color: pink;
+}
+.result{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 2px solid rgb(106,106,104);
+}
+button.btn{
+    padding: 5px;
+    outline: none;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    cursor: pointer;
+    background: rgb(17, 244, 17);
+    color: #fff;
+    font-size: 15px;
+    transition: all 0.5s;
+}
+button.btn:hover{
+    background-color: rgb(3, 94, 3);
+}
